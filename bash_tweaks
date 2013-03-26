@@ -2,6 +2,9 @@ export PATH="$HOME/bin:$PATH"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
 GIT_PS1_SHOWDIRTYSTATE=true
 
-PS1='\033[34m\]\u@\h\n\033[32m\]\w \[\033[31m\]$(__git_ps1 "(%s)")\[\033[0m\]\$ '
+PS1='\033[34m\]\u@\h\n\033[32m\]\w \033[31m\]$(__git_ps1 "(%s)")\033[0m\]\$ '

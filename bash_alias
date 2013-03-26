@@ -1,1 +1,4 @@
-alias ll="ls -la"
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+alias ls='ls -Fh'
+alias ll='ls -Fhl'
